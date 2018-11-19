@@ -7,3 +7,6 @@ https://github.com/asweigart/simple-turtle-tutorial-for-python/blob/master/simpl
 
 ### A good tutorial for markdown files
 https://www.markdowntutorial.com/
+
+### A good tutorial for regular expression
+https://docs.python.org/3/howto/regex.html
