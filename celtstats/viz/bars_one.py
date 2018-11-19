@@ -30,5 +30,3 @@ def drawBar(x, y, height, width, color) :
     end_fill()
 
     update() # Render image
-    # the following line should be removed, it's here just for testing purposes
-    exitonclick() # Wait for user's mouse click
