@@ -9,6 +9,10 @@ Todo:
 """
 
 def avgValue(values) :
+    """avgValue
+
+    This function does
+    """
     total = 0
     for v in values :
         total += v
@@ -16,6 +20,10 @@ def avgValue(values) :
     return total
 
 def maxValue(values) :
+    """maxValue
+
+    This function does
+    """
     max = 0
     for v in values :
         if v > max :
