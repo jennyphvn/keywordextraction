@@ -20,7 +20,7 @@ def main() :
     print(cs.parser.text2tokens(values))
 
     # invoking the function avgFoo defined in the module celtstats.stats
-    print(cs.stats.avgFoo(numbers))
+    print(cs.stats.avgValue(numbers))
 
     # using a variable defined in a module in the package
     print(cs.parser.sw)
