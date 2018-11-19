@@ -40,6 +40,9 @@ def main() :
     # invoking the function drawBar defined in the module celtstats.viz
     cs.viz.drawBar(15, 50, 70, 10, 'blue')
 
+    # add another bar
+    cs.viz.drawBar(35, 70, 70, 10, 'red')
+
 main()
 
 # Notes about packages
