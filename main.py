@@ -41,7 +41,8 @@ def main() :
     cs.viz.drawBar(15, 50, 70, 10, 'blue')
 
     # add another bar in red
-    cs.viz.drawBar(35, 270, 70, 10, 'red')
+    color = 'red'
+    cs.viz.drawBar(35, 270, 70, 10, color)
 
     # add a green bar
     cs.viz.drawBar(35, 70, 70, 10, 'green')
