@@ -40,8 +40,14 @@ def main() :
     # invoking the function drawBar defined in the module celtstats.viz
     cs.viz.drawBar(15, 50, 70, 10, 'blue')
 
+<<<<<<< HEAD
     # add another bar (red)
     cs.viz.drawBar(35, 270, 70, 10, 'red')
+=======
+    # add another bar in red
+    color = 'red'
+    cs.viz.drawBar(35, 270, 70, 10, color)
+>>>>>>> 836a7ee5680da4bce36595afb749e5bd744c920e
 
     # add a green bar
     cs.viz.drawBar(35, 70, 70, 10, 'green')
