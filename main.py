@@ -43,6 +43,9 @@ def main() :
     # add another bar
     cs.viz.drawBar(35, 70, 70, 10, 'red')
 
+    # add a green bar
+    cs.viz.drawBar(35, 70, 70, 10, 'green')
+
     # the following line should be removed, it's here just for testing purposes
     turtle.exitonclick() # Wait for user's mouse click
 
