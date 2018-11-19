@@ -1,0 +1,34 @@
+import turtle
+import celtstats as cs
+import celtstats.stats as stats
+
+# to see a help for this package type help('celtstats') in the python interpreter
+
+def main() :
+    values = ['The', 'first', 'time', 'Google', 'Photos', 'made', 'me', 'cry,', 'it', 'was', 'with', 'a', 'sucker', 'punch.', 'I', 'had', 'looked', 'at', 'my', 'phone', 'one', 'morning', 'in', 'April,', 'expecting', 'more', 'news', 'of', 'global', 'woe.', 'Instead', 'there', 'was', 'an', 'alert', 'from', 'Photos,', 'letting', 'me', 'know', 'that', 'Google', 'image-processing', 'robots', 'had', 'created', 'some', 'kind', 'of', 'montage', 'from', 'my', 'videos'
+    ]
+
+    numbers = [ 1, 2, 3, 4, 5]
+
+    # invoking the function readFiles defined in the module celtstats.io
+    cs.io.readFiles('./texts')
+
+    # invoking the function readFiles defined in the module celtstats.io
+    cs.io.writeFile('.', values )
+
+    # invoking the function text2tokens defined in the module celtstats.parser
+    print(cs.parser.text2tokens(values))
+
+    # invoking the function avgFoo defined in the module celtstats.stats
+    print(cs.stats.avgFoo(numbers))
+
+    # using a variable defined in a module in the package
+    print(cs.parser.sw)
+
+    # invoking the function drawBar defined in the module celtstats.viz
+    cs.viz.drawBar(15, 50, 70, 10, 'blue')
+
+main()
+
+# Notes about packages
+# Regular packages are self-contained: all parts live in the same directory hierarchy.
