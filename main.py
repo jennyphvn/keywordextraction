@@ -58,6 +58,6 @@ main()
 # Notes about packages
 # Regular packages are self-contained: all parts live in the same directory hierarchy.
 #test run!!
-#1
+#1 2
 
 #test comment
