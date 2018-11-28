@@ -38,7 +38,7 @@ def text2tokens(stream) :
         * list : of words
 
     """
-
+    
     tokens = []
     for line in stream :
         tokens += [line]
