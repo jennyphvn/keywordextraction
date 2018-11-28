@@ -12,6 +12,7 @@ import re
 import string
 import sys
 
+userstring = input().split(' ')
 sw =['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
       'be', 'by', 'com', 'for', 'from', 'he', 'how', 'in', \
       'is', 'it', 'of', 'on', 'or', 'she', 'that', 'the', \
@@ -25,7 +26,7 @@ def text2tokens(stream) :
         print(line)
 
     another_list = []
-    for x in sw:
+    for x in userstring:
         if x not in sw:
             another_list.append(x)
     for x in another_list:
