@@ -61,4 +61,10 @@ main()
 # Notes about packages
 # Regular packages are self-contained: all parts live in the same directory hierarchy.
 #test run!!
+<<<<<<< HEAD
 #1333 ugh
+=======
+#1 2
+
+#test comment
+>>>>>>> 66e23ec825ef3a191ae9f33888afdf52a926f3ff
