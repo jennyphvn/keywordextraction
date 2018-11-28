@@ -20,6 +20,10 @@ sw = ['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
 
 #
 def text2tokens(stream) :
+    stream = open('/Users/alyssagoins/Desktop/COMSC-1450/draft/texts/input/document_1122.txt','rU')
+    for line in stream:
+        print(line)
+
     """text2tokens function
 
     Args:
