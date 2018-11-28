@@ -19,5 +19,5 @@ from .building import *
 
 #def function buildDiction(document, words)
 #   for w in words :
-#       documentIndex +=
+#       documentIndex[document] = words
 #one is going to be the key. one os going to be the value
