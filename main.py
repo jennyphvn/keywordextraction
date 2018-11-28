@@ -2,7 +2,7 @@ import turtle
 import celtstats as cs
 import celtstats.stats as stats
 import celtstats.builder as bd
-import my_functions
+#import my_functions
 
 # to see a help for this package type help('celtstats') in the python interpreter
 #documentIndex = {}
@@ -55,16 +55,9 @@ def main() :
 
     # the following line should be removed, it's here just for testing purposes
     turtle.exitonclick() # Wait for user's mouse click
-#invoke function that reads from files, invokes dictionary 
+#invoke function that reads from files, invokes dictionary
 main()
 
 # Notes about packages
 # Regular packages are self-contained: all parts live in the same directory hierarchy.
 #test run!!
-<<<<<<< HEAD
-#1333 ugh
-=======
-#1 2
-
-#test comment
->>>>>>> 66e23ec825ef3a191ae9f33888afdf52a926f3ff

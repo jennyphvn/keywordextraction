@@ -1,6 +1,7 @@
 import os
 import celtstats.parser as pr
 #import celtstats.buildDiction as bd
+
 def readFiles(filesPath) :
     fs = os.listdir(filesPath + '/input')
 
@@ -17,9 +18,22 @@ def readFiles(filesPath) :
         with open(filesPath + '/input/' + file) as f:
             #each line in file
             for line in f:
-                print((type(line))
-                line = pr.useRegularExpression(line)
-                            #invoking function from parser
+                print(type(line))
+                cleanlist = []
+                line2 = pr.useRegularExpression(line)
+                for x in line2 :
+                    if x not in pr.sw :
+                        cleanlist += [x]
                 print(line)
                 outHandler.write(line)
-#create new function reading the parser files from '/output/' instead of '/input'
+
+def readParsedFiles(filesPath) :
+    fs = os.listdir(filesPath + '/output')
+
+    for file in fs :
+        print('input file is: ' + file)
+        print('output file is: ' + filesPath + file)
+
+        with open(filePath + file) as f :
+            for line in f :
+                line2 = pr.useRegularExpression(line)

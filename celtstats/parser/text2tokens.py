@@ -10,9 +10,8 @@ Todo:
 
 import re
 import string
-import sys
 
-userstring = input().split(' ')
+
 sw =['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
       'be', 'by', 'com', 'for', 'from', 'he', 'how', 'in', \
       'is', 'it', 'of', 'on', 'or', 'she', 'that', 'the', \
@@ -21,18 +20,7 @@ sw =['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
 
 #
 def text2tokens(stream) :
-    stream = open('/Users/alyssagoins/Desktop/COMSC-1450/draft/texts/input/document_1122.txt','rU')
-    for line in stream:
-        print(line)
-
-    another_list = []
-    for x in userstring:
-        if x not in sw:
-            another_list.append(x)
-    for x in another_list:
-         print(x,end=' ')
-
-
+     
     """text2tokens function
 
     Args:
