@@ -18,7 +18,7 @@ def readFiles(filesPath) :
             #each line in file
             for line in f:
                 print((type(line))
-                line2 = pr.useRegularExpression(line)
+                line = pr.useRegularExpression(line)
                             #invoking function from parser
                 print(line)
-                outHandler.write(line2)
+                outHandler.write(line)
