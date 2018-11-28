@@ -10,14 +10,21 @@ Todo:
 
 import re
 import string
+import sys
 
-# stop words to be removed
-sw = ['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
+print ("enter the string from which you want to remove list of stop words")
+userstring = input().split(" ")
+list =['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
       'be', 'by', 'com', 'for', 'from', 'he', 'how', 'in', \
       'is', 'it', 'of', 'on', 'or', 'she', 'that', 'the', \
       'they', 'this', 'to', 'was', 'what', 'when', 'where', \
       'who', 'will', 'with', 'the', 'www', 'you', 'we']
-
+another_list = []
+for x in userstring:
+    if x not in list:
+        another_list.append(x)
+for x in another_list:
+     print(x,end=' ')
 #
 def text2tokens(stream) :
     """text2tokens function
