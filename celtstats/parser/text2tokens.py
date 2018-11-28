@@ -12,15 +12,13 @@ import re
 import string
 import sys
 
-print ("enter the string from which you want to remove list of stop words")
-userstring = input().split(" ")
 list =['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
       'be', 'by', 'com', 'for', 'from', 'he', 'how', 'in', \
       'is', 'it', 'of', 'on', 'or', 'she', 'that', 'the', \
       'they', 'this', 'to', 'was', 'what', 'when', 'where', \
       'who', 'will', 'with', 'the', 'www', 'you', 'we']
 another_list = []
-for x in userstring:
+for x in list:
     if x not in list:
         another_list.append(x)
 for x in another_list:
