@@ -13,4 +13,4 @@ Main Features
 """
 
 print('loading celtstats.builder module __init__.py')
-from . import *
+from .building import *
