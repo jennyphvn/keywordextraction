@@ -12,22 +12,25 @@ import re
 import string
 import sys
 
-list =['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
+sw =['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
       'be', 'by', 'com', 'for', 'from', 'he', 'how', 'in', \
       'is', 'it', 'of', 'on', 'or', 'she', 'that', 'the', \
       'they', 'this', 'to', 'was', 'what', 'when', 'where', \
       'who', 'will', 'with', 'the', 'www', 'you', 'we']
-another_list = []
-for x in list:
-    if x not in list:
-        another_list.append(x)
-for x in another_list:
-     print(x,end=' ')
+
 #
 def text2tokens(stream) :
     stream = open('/Users/alyssagoins/Desktop/COMSC-1450/draft/texts/input/document_1122.txt','rU')
     for line in stream:
         print(line)
+
+    another_list = []
+    for x in sw:
+        if x not in sw:
+            another_list.append(x)
+    for x in another_list:
+         print(x,end=' ')
+
 
     """text2tokens function
 
@@ -38,7 +41,7 @@ def text2tokens(stream) :
         * list : of words
 
     """
-    
+
     tokens = []
     for line in stream :
         tokens += [line]
