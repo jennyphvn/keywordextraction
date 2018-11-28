@@ -1,6 +1,6 @@
 import os
 import celtstats.parser as pr
-
+#import celtstats.buildDiction as bd
 def readFiles(filesPath) :
     fs = os.listdir(filesPath + '/input')
 
@@ -22,3 +22,4 @@ def readFiles(filesPath) :
                             #invoking function from parser
                 print(line)
                 outHandler.write(line)
+#create new function reading the parser files from '/output/' instead of '/input'

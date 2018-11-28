@@ -14,3 +14,10 @@ Main Features
 
 print('loading celtstats.builder module __init__.py')
 from .building import *
+
+#documentIndex = {}
+
+#def function buildDiction(document, words)
+#   for w in words :
+#       documentIndex +=
+#one is going to be the key. one os going to be the value
