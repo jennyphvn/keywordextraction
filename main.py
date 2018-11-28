@@ -55,7 +55,7 @@ def main() :
 
     # the following line should be removed, it's here just for testing purposes
     turtle.exitonclick() # Wait for user's mouse click
-
+#invoke function that reads from files, invokes dictionary 
 main()
 
 # Notes about packages
