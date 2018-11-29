@@ -11,6 +11,9 @@ Todo:
 import re
 import string
 
+documentIndex = {}
+wordIndex = {}
+indexAgmentedCount = {}
 
 sw =['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
       'be', 'by', 'com', 'for', 'from', 'he', 'how', 'in', \
@@ -20,7 +23,7 @@ sw =['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
 
 #
 def text2tokens(stream) :
-     
+
     """text2tokens function
 
     Args:
