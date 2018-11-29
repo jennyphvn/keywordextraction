@@ -56,5 +56,7 @@ def useRegularExpression(stream, option='alphanum') :
         newStream = re.sub(r'[^0-9 ]',r'',stream)
     elif option == 'symb' :
         newStream = re.sub(r'[a-zA-Z0-9]',r'',stream)
+    elif option == 'lower' :
+        newStream = stream.lower()
 
     return newStream

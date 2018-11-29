@@ -27,7 +27,7 @@ def main() :
 
     # using a variable defined in a module in the package
     print(cs.parser.sw)
-    print(cs.parer.punctuationMarksList)
+    print(cs.parser.punctuationMarksList)
 
     # example of using regular expression to remove some characters
     stringExample = 'this is an 1 2 3 Example 4 5 6 7 8 9 0string to show how to keep only !@#$%^&*()_ - _ = charac\' "t"   ers '
@@ -40,6 +40,8 @@ def main() :
     print(cs.parser.useRegularExpression(stringExample, 'num'))
     print('************* Keeps symbols only')
     print(cs.parser.useRegularExpression(stringExample, 'symb'))
+    print('************* Turns to lower case')
+    print(cs.parser.useRegularExpression(stringExample, 'lower'))
 
     # invoking the function drawBar defined in the module celtstats.viz
     cs.viz.drawBar(15, 50, 70, 10, 'blue')
