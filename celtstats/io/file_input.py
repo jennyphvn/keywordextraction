@@ -22,8 +22,9 @@ def readFiles(filesPath) :
                 cleanlist = []
                 line2 = pr.useRegularExpression(line)
                 for x in line2 :
-                    if x not in pr.sw :
-                        cleanlist += [x]
+                    if x not in pr.sw:
+                        if x not in pr.punctuationMarksList:
+                            cleanlist += [x]
                 print(line)
                 outHandler.write(line)
 

@@ -20,8 +20,10 @@ sw =['i', 'a', 'am', 'about', 'an', 'are', 'as', 'at', \
       'is', 'it', 'of', 'on', 'or', 'she', 'that', 'the', \
       'they', 'this', 'to', 'was', 'what', 'when', 'where', \
       'who', 'will', 'with', 'the', 'www', 'you', 'we']
+punctuationMarksList = ['!','@','#','$','%','^','&','*','(', \
+                        ')','_','-','=','+',"'",'"', \
+                        '1','2','3','4','5','6','7','8','9','0']
 
-#
 def text2tokens(stream) :
 
     """text2tokens function
