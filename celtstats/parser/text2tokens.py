@@ -7,6 +7,10 @@ Todo:
     * Add return values
 
 """
+# https://www.sanfoundry.com/python-program-count-occurrences-word-text-file/
+# to use these anywhere else in the code:
+# import celtstats as cs
+# then use cs.parser to invoke parser in this folder
 
 import re
 import string
