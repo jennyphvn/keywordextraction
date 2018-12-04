@@ -16,7 +16,7 @@ print('loading celtstats.builder module __init__.py')
 #from .building import *
 
 documentIndex = {}
-for 
+#for 
 #def buildDiction(document, words):
 #    for w in words :
 #        documentIndex[document] = words
