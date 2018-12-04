@@ -1,10 +1,7 @@
 """text2tokens functions
 
 This module lists stop words to be removed, returns a list of the lines of text in text file, returns list of words in the text file
-
-Todo:
-    * Clean code
-    * Add return values
+removes numerals and special characters from input text and returns text with those characters removed
 
 """
 # https://www.sanfoundry.com/python-program-count-occurrences-word-text-file/
