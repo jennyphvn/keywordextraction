@@ -1,4 +1,4 @@
-'''
+
 import os
 import celtstats.parser as pr
 #import celtstats.buildDiction as bd
@@ -39,7 +39,7 @@ def readParsedFiles(filesPath) :
         with open(filePath + file) as f :
             for line in f :
                 line2 = pr.useRegularExpression(line)
-'''
+
 def createDocumentIndexDictionary(path):
     fs = os.listdir(path)   # returns a list with the names of the files in a given directory
 
