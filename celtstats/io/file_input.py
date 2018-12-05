@@ -81,5 +81,3 @@ def createDocumentIndexDictionary(path):
 
                     cs.parser.documentIndex[file] = (val_1, val_2) # updates the entry in the external dictionary by creating
                                                                    # a tuple with the previously generated values
-=======
->>>>>>> 153f25077a425162dfc3e4fcaa26f383eedb5ffa
