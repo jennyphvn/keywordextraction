@@ -1,4 +1,3 @@
-
 import os
 import celtstats.parser as pr
 import celtstats.buildDiction as bd
