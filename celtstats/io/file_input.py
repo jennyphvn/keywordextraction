@@ -1,6 +1,6 @@
 import os
 import celtstats.parser as pr
-import celtstats.buildDiction as bd
+#import celtstats.buildDiction as bd
 
 def readFiles(filesPath) :
     fs = os.listdir(filesPath + '/input')
