@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 153f25077a425162dfc3e4fcaa26f383eedb5ffa
 import os
 import celtstats.parser as pr
-#import celtstats.buildDiction as bd
+import celtstats.buildDiction as bd
 
 def readFiles(filesPath) :
     fs = os.listdir(filesPath + '/input')
