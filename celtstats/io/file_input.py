@@ -39,7 +39,6 @@ def readParsedFiles(filesPath) :
         with open(filePath + file) as f :
             for line in f :
                 line2 = pr.useRegularExpression(line)
-<<<<<<< HEAD
 
 def createDocumentIndexDictionary(path):
     fs = os.listdir(path)   # returns a list with the names of the files in a given directory
