@@ -1,7 +1,7 @@
 import turtle
-#import celtstats as cs
+import celtstats as cs
 import celtstats.stats as stats
-#import celtstats.builder as bd
+import celtstats.builder as bd
 #import my_functions
 
 # to see a help for this package type help('celtstats') in the python interpreter
