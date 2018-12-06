@@ -18,6 +18,7 @@ def readFiles(filesPath) :
         with open(filesPath + '/input/' + file) as f:
             #each line in file
             for line in f:
+<<<<<<< current
                 print(type(line))
                 cleanlist = []
                 line2 = pr.useRegularExpression(line)
@@ -80,3 +81,10 @@ def createDocumentIndexDictionary(path):
 
                     cs.parser.documentIndex[file] = (val_1, val_2) # updates the entry in the external dictionary by creating
                                                                    # a tuple with the previously generated values
+=======
+                print((type(line))
+                line2 = pr.useRegularExpression(line)
+                            #invoking function from parser
+                print(line)
+                outHandler.write(line2)
+>>>>>>> before discard
