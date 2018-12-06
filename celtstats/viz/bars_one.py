@@ -22,6 +22,7 @@ def drawBar(x, y, height, width, color) :
     forward(width)
     left(90)
     forward(height)
+    #write(str(height))
     left(90)
     forward(width)
     left(90)
@@ -29,4 +30,12 @@ def drawBar(x, y, height, width, color) :
     left(90)
     end_fill()
 
+    # xs = [48, 117, 200, 240, 160, 260, 220]  # here is the data (KH: in our version these would be the number of times each word occurred)
+    # maxheight = max(xs)
+    # numbars = len(xs)
+    # border = 10
+
+
     update() # Render image
+#added code from http://interactivepython.org/runestone/static/CS152f17/Functions/ATurtleBarChart.html in comments because IDK if you will want to use it or not
+#I'm trying to help without deleting anything ok
