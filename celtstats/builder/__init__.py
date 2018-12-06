@@ -352,10 +352,3 @@ def addToInsideDoc(doc_name, stream):
                 for line in f:
                     line2= line.split()
                     addtoInsideDoc(file, line2)
-
-
-#for
-#def buildDiction(document, words):
-#    for w in words :''
-#        documentIndex[document] = words
-#one is going to be the key. one os going to be the value
