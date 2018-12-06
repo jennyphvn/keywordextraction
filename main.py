@@ -11,7 +11,7 @@ def main() :
     values = ['The', 'first', 'time', 'Google', 'Photos', 'made', 'me', 'cry,', 'it', 'was', 'with', 'a', 'sucker', 'punch.', 'I', 'had', 'looked', 'at', 'my', 'phone', 'one', 'morning', 'in', 'April,', 'expecting', 'more', 'news', 'of', 'global', 'woe.', 'Instead', 'there', 'was', 'an', 'alert', 'from', 'Photos,', 'letting', 'me', 'know', 'that', 'Google', 'image-processing', 'robots', 'had', 'created', 'some', 'kind', 'of', 'montage', 'from', 'my', 'videos'
     ]
 
-    numbers = [ 1, 2, 3, 4, 5]
+    numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
     # invoking the function readFiles defined in the module celtstats.io
     cs.io.readFiles('./texts')
