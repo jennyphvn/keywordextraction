@@ -15,6 +15,7 @@ Main Features
 print('loading celtstats.builder module __init__.py')
 #from .building import *
 
+<<<<<<< HEAD
 documentIndex = { 'document_1122':
                     ( 38,
                         { 'first' : 1, 'time' : 1, 'google' : 1, 'photos' : 1, 'made' : 1, 'me' : 2, 'cry' : 1, 'sucker' : 1, 'punch' : 1, 'had' : 2, 'looked' : 1, 'my' : 2, 'phone' : 1, 'one' : 1, 'morning' : 1, 'april' : 1, 'expecting' : 1, 'more' : 1, 'news' : 1, 'global' : 1, 'woe' : 1, 'instead' : 1, 'there' : 1, 'alert' : 1, 'photos' : 1, 'letting' : 1, 'know' : 1, 'googles' : 1, 'image-processing' : 1, 'robots' : 1, 'created' : 1, 'some' : 1, 'kind' : 1, 'montage' : 1, 'videos' : 1}),
@@ -361,4 +362,10 @@ def addToInsideDoc(doc_name, stream):
 #def buildDiction(document, words):
 #    for w in words :''
 #        documentIndex[document] = words
+=======
+documentIndex = {}
+def buildDiction(document, words):
+    for w in words :
+        documentIndex[document] = words
+>>>>>>> 9fe2f32918b4736f0967d3392dd2791182f9684c
 #one is going to be the key. one os going to be the value
