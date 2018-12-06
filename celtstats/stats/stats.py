@@ -40,7 +40,6 @@ def freWordsDoc(document, word):
             count += 1
     #do this with every document. choose different word
     print(count)
-    f.close()
 
 #def rankWordsDoc(document, word):
 
@@ -52,6 +51,14 @@ def wordBeginLetterDoc(document, word):
         for word in line:
             if 'a' in word:
                 beginlist += [word]
+    #do this with every document. choose different letter
     return beginlist
 
-def 
+def wordEndLetterDoc(document, word):
+    endList = {}
+    f = open('document_1122.txt','r')
+    doc = f.readlines()
+    for i in range(len(doc)):
+         endList.append(doc[i].strip('\n'))
+    #do this with every document. choose different letter
+    return endList
