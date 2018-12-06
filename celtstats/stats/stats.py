@@ -30,3 +30,13 @@ def maxValue(values) :
             max = v
 
     return max
+
+def freWordsDoc(document, word):
+    count = 0
+    f = open('document_1122.txt','r')
+    doc = f.readlines()
+    for line in doc:
+        if 'google' in line:
+            count += 1
+    print(count)
+    f.close()
