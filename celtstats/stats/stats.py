@@ -38,5 +38,8 @@ def freWordsDoc(document, word):
     for line in doc:
         if 'google' in line:
             count += 1
+    #do this with every document. choose different word 
     print(count)
     f.close()
+
+def rankWordsDoc(document, word):
