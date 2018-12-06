@@ -38,8 +38,20 @@ def freWordsDoc(document, word):
     for line in doc:
         if 'google' in line:
             count += 1
-    #do this with every document. choose different word 
+    #do this with every document. choose different word
     print(count)
     f.close()
 
-def rankWordsDoc(document, word):
+#def rankWordsDoc(document, word):
+
+def wordBeginLetterDoc(document, word):
+    beginlist = {}
+    f = open('document_1122.txt','r')
+    doc = f.readlines()
+    for line in doc:
+        for word in line:
+            if 'a' in word:
+                beginlist += [word]
+    return beginlist
+
+def 
