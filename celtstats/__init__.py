@@ -1,11 +1,10 @@
 # this file is invoked when an application imports this package with the following command
 # import celtstats
 # imports all modules and functions from the celtstats package
-#from celtstats.builder import *
-#from celtstats.io import *
+from celtstats.builder import *
+from celtstats.io import *
 from celtstats.parser import *
 from celtstats.stats import *
-from celtstats.tests import *
 from celtstats.viz import *
 import turtle
 

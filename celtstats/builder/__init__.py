@@ -13,7 +13,7 @@ Main Features
 """
 
 print('loading celtstats.builder module __init__.py')
-from .building import *
+from .builder import *
 from .monroyexample import *
 #from .building import *
 

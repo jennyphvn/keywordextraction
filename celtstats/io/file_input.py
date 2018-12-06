@@ -11,14 +11,13 @@ def readFiles(filesPath) :
         docName = file[:file.find('.')-1]
                     #splicing a list
         outputFile = filesPath + '/output/' + docName + '.out'
-        outHandler = open(outputFile, "w+")
+        outHandler = open(outputFile, "w+", encoding='ISO-8859-1')
 
         print('output file is: ' + outputFile)
 
-        with open(filesPath + '/input/' + file) as f:
+        with open(filesPath + '/input/' + file, encoding='ISO-8859-1') as f:
             #each line in file
             for line in f:
-#<<<<<<< current
                 print(type(line))
                 cleanlist = []
                 line2 = pr.useRegularExpression(line)
@@ -36,7 +35,7 @@ def readParsedFiles(filesPath) :
         print('input file is: ' + file)
         print('output file is: ' + filesPath + file)
 
-        with open(filePath + file) as f :
+        with open(filePath + file, encoding='ISO-8859-1') as f :
             for line in f :
                 line2 = pr.useRegularExpression(line)
 
@@ -81,10 +80,8 @@ def createDocumentIndexDictionary(path):
 
                     cs.parser.documentIndex[file] = (val_1, val_2) # updates the entry in the external dictionary by creating
                                                                    # a tuple with the previously generated values
-=======
-                print((type(line))
+                print((type(line)))
                 line2 = pr.useRegularExpression(line)
                             #invoking function from parser
                 print(line)
                 outHandler.write(line2)
->>>>>>> before discard

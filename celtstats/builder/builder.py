@@ -1,14 +1,14 @@
 import celtstats as cs
 import os
 
-def builddict_1(stream, dict = 'documentIndex'):
+def builddict_1(dict = 'documentIndex'):
         fs = os.listdir('./texts/output')
 
         for file in fs :
             print('input file is: ' + file)
             docname = file[:file.find('.')]
-            with open('./texts/output/' + file) as f:
-                    token_word = cs.parser.text2tokens(f)
+            with open('./texts/output/' + file, encoding='ISO-8859-1') as f:
+                    token_words = cs.parser.text2tokens(f)
 
                     count_unique_words = 0
                     for token in token_words:
@@ -20,8 +20,8 @@ def builddict_1(stream, dict = 'documentIndex'):
                             count_each_word = token_words.count(token)
                             token_counts[token] = count_each_word
 
-                        tuple = (count_unique_words, token_counts)
-                        cs.parser.documentindex[docnam] = tuple
+                    tuple = (count_unique_words, token_counts)
+                    cs.parser.documentIndex[docname] = tuple
 
 def builddic_2(stream, dict = 'wordIndex'):
     fs = os.listdir('./texts/output')
@@ -30,7 +30,7 @@ def builddic_2(stream, dict = 'wordIndex'):
         print('input file is: ' + file)
         docname = file[:file.find('.')]
 
-        with open('./texts/output/' + file) as f:
+        with open('./texts/output/' + file, encoding='ISO-8859-1') as f:
             token_words = cs.parser.text2tokens(f)
             for token in token_words:
                 if token in cs.parser.wordindex:

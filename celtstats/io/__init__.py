@@ -12,5 +12,5 @@ Main Features
   - etc, etc.
 """
 print('loading celtstats.io module __init__.py')
-#from .file_input import *
+from .file_input import *
 from .file_output import *

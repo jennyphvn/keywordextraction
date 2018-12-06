@@ -19,6 +19,10 @@ def main() :
     # invoking the function readFiles defined in the module celtstats.io
     cs.io.writeFile('.', values )
 
+#invoke functions to build dictionary here
+    cs.builder.builddict_1()
+    print(cs.parser.documentIndex)
+    exit(1)
     # invoking the function text2tokens defined in the module celtstats.parser
     print(cs.parser.text2tokens(values))
 

@@ -1,5 +1,5 @@
 
-import celtsats as cs
+import celtstats as cs
 import os
 
 def addToDoc(doc_name, count):
@@ -18,11 +18,11 @@ def addToInsideDoc(doc_name, stream):
         else:
             d2[word]= 1
         tuple=(count, d2)
-        cs.parser/documentIndex[doc_name]= tuple
+        cs.parser.documentIndex[doc_name]= tuple
 
     def readFiles(filesPath):
         fs= os.listdir(filesPath)
-            for file in fs:
+        for file in fs:
             print('input file is:' + file)
             addToDoc(file, 0)
 
