@@ -1,3 +1,6 @@
+import celtstats as cs
+import os
+
 def builddict_1(stream, dict = 'documentIndex'):
         fs = os.listdir('./texts/output')
 

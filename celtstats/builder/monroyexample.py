@@ -21,7 +21,7 @@ def addToInsideDoc(doc_name, stream):
         cs.parser/documentIndex[doc_name]= tuple
 
     def readFiles(filesPath):
-        fs= os,listdir(filesPath)
+        fs= os.listdir(filesPath)
             for file in fs:
             print('input file is:' + file)
             addToDoc(file, 0)
