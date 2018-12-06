@@ -18,7 +18,7 @@ def readFiles(filesPath) :
         with open(filesPath + '/input/' + file) as f:
             #each line in file
             for line in f:
-<<<<<<< current
+#<<<<<<< current
                 print(type(line))
                 cleanlist = []
                 line2 = pr.useRegularExpression(line)
