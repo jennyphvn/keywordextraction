@@ -22,7 +22,8 @@ def main() :
 #invoke functions to build dictionary here
     cs.builder.builddict_1()
     print(cs.parser.documentIndex)
-    exit(1)
+    #insert exit(1) to run only the code above it
+    #exit(1)
     # invoking the function text2tokens defined in the module celtstats.parser
     print(cs.parser.text2tokens(values))
 
