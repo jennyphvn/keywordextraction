@@ -54,6 +54,21 @@ def freqWordsDoc(document, word):
     print(count)
 
 #def rankWordsDoc(document, word):
+def rankWordsDoc(document,word):
+    d=cs.parser.documentIndex.items()
+    listofwords=[]
+    listofcounts=[]
+
+    for k,v in d:
+        c=v[0]
+        d2=v[1]
+
+        for key,value in d2.items():
+
+            listofcounts += [value]
+            listofwords += [key]
+
+            return(sorted(listofwords, reverse=True)[:4], sorter(listofcounts, reverse=True)[:4])
 
 def wordBeginLetterDoc(document, word):
     beginlist = {}
@@ -98,6 +113,29 @@ def wordEndLetterDoc(document, word):
          endList.append(doc[i].strip('\n'))
     f.close()
     return endList
+
+def WordsSizeDoc(document, size):
+    d=cs.parser.documentIndex[document][1]
+
+    listofwords = []
+    for key, value in d.items():
+        if key == word :
+            result = value
+
+        return result
+
+def freqdocscount(word):
+    d=cs.parser.wordIndex.items()
+
+    doc_list = []
+
+    for key,value in d:
+        if value[0] ==count:
+            for doc in value[1]:
+                if doc not in docs_list:
+                    docs_list +=[doc]
+
+            return docs_list[:k]
 
 def freqDocs(word): #given a word, return a list of the documents where that word appears
     f = open('document_1122.txt','r')
