@@ -22,6 +22,16 @@ def main() :
 #invoke functions to build dictionary here
     cs.builder.builddict_1()
     print(cs.parser.documentIndex)
+    print(cs.freqwordsDoc(document,word))
+    print(cs.rankWordsDoc(document,word))
+    print(cs.wordBeginLetterDoc(document,letter))
+    print(cs.wordEndLetterDoc(document,letter))
+    print(cs.WordsSizeDoc(document,letter))
+    print(cs.freqdocscount(word))
+    print(cs.freqdocs(word))
+    print(cs.freqDocsWords(count,k))
+    print(cs.freqWordsSizeDoc(document,word))
+    print(cs.augmentedCountWord(document,word))
     #insert exit(1) to run only the code above it
     #exit(1)
     # invoking the function text2tokens defined in the module celtstats.parser
@@ -29,6 +39,7 @@ def main() :
 
     # invoking the function avgFoo defined in the module celtstats.stats
     print(cs.stats.avgValue(numbers))
+
 
     # using a variable defined in a module in the package
     print(cs.parser.sw)
