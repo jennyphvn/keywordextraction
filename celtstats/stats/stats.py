@@ -123,17 +123,17 @@ def freqDocsWords(count, k): #given a count, return a list of documents that hav
                              #result can be long, return only k documents (where k is an integer)
     f = open('document_1122.txt','r')
     doc = f.readlines()
-    if len(doc) = 56:
+    if len(doc) == 56:
         print("document_1122")
     f.close()
     f = open('document_3456.txt','r')
     doc = f.readlines()
-    if len(doc) = 56:
+    if len(doc) == 56:
             print("document_3456")
     f.close()
     f = open('document_7788.txt','r')
     doc = f.readlines()
-    if len(doc) = 56:
+    if len(doc) == 56:
             print("document_7788")
     f.close()
 
