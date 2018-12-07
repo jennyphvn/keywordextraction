@@ -32,6 +32,8 @@ def main() :
     print(cs.stats.freqDocsWords)
     print(cs.stats.freqWordsSizeDoc)
     print(cs.stats.augmentedCountWord)
+
+
     #insert exit(1) to run only the code above it
     #exit(1)
     # invoking the function text2tokens defined in the module celtstats.parser
@@ -64,7 +66,7 @@ def main() :
 
     # add another bar in red
     color = 'red'
-    cs.viz.drawBar(35, 50, 70, 10, color)
+    cs.viz.drawBar(35, 50, 70, 10, 'red')
 
     # add another bar in yellow
     cs.viz.drawBar(55, 50, 70, 10, 'yellow')
@@ -73,7 +75,7 @@ def main() :
     cs.viz.drawBar(75, 50, 70, 10, 'green')
 
     # the following line should be removed, it's here just for testing purposes
-    turtle.exitonclick() # Wait for user's mouse click
+    #turtle.exitonclick() # Wait for user's mouse click
 #invoke function that reads from files, invokes dictionary
 main()
 
