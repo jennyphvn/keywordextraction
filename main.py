@@ -69,9 +69,11 @@ def main() :
     cs.viz.drawBar(35, 50, 70, 10, 'red')
 
     # add another bar in yellow
+    color = 'yellow'
     cs.viz.drawBar(55, 50, 70, 10, 'yellow')
 
     # add a green bar
+    color = 'green'
     cs.viz.drawBar(75, 50, 70, 10, 'green')
 
     # the following line should be removed, it's here just for testing purposes
