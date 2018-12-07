@@ -39,3 +39,4 @@ def drawBar(x, y, height, width, color) :
     update() # Render image
 #added code from http://interactivepython.org/runestone/static/CS152f17/Functions/ATurtleBarChart.html in comments because IDK if you will want to use it or not
 #I'm trying to help without deleting anything ok
+#Ok
