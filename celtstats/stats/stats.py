@@ -130,7 +130,7 @@ def freqdocscount(word):
     doc_list = []
 
     for key,value in d:
-        if value[0] ==count:
+        if value[0] == count:
             for doc in value[1]:
                 if doc not in docs_list:
                     docs_list +=[doc]
@@ -138,68 +138,51 @@ def freqdocscount(word):
             return docs_list[:k]
 
 def freqDocs(word): #given a word, return a list of the documents where that word appears
-    f = open('document_1122.txt','r')
-    doc = f.readlines()
-    for line in doc:
-        if 'more' in line:
-            print("document_1122")
-    f.close()
-    f = open('document_3456.txt','r')
-    doc = f.readlines()
-    for line in doc:
-        if 'more' in line:
-            print("document_3456")
-    f.close()
-    f = open('document_7788.txt','r')
-    doc = f.readlines()
-    for line in doc:
-        if 'more' in line:
-            print("document_7788")
-    f.close()
+    d = cs.parser.wordIndex.items()
+
+    doc_list = []
+
+    for key,value in d:
+        if value[0] == word:
+            for doc in value[1]
+                if doc not in docs_list:
+                    docs_list += [doc]
+
+                    return docs_list
+
+
 
 def freqDocsWords(count, k): #given a count, return a list of documents that have that number of words, because the
                              #result can be long, return only k documents (where k is an integer)
-    f = open('document_1122.txt','r')
-    doc = f.readlines()
-    if len(doc) == 56:
-        print("document_1122")
-    f.close()
-    f = open('document_3456.txt','r')
-    doc = f.readlines()
-    if len(doc) == 56:
-            print("document_3456")
-    f.close()
-    f = open('document_7788.txt','r')
-    doc = f.readlines()
-    if len(doc) == 56:
-            print("document_7788")
-    f.close()
+    d = cs.parser.documentindex.items()
 
 def freqWordsSizeDoc(document, word): #given a document name, return the result of the number of times that word
                                       #appear in that document divided by the number of unique words in that document.
-    endList = {}
-    count = 0
-    f = open('document_1122.txt','r')
-    doc = f.readlines()
-    for line in doc:
-        if 'google' in line:
-            count += 1
-    f.close()
-    division = (count / len(doc))
-    print(division)
-    return endList
+    d_new = cs.parser.documentIndex[document][0]
+    d = cs.parser.documentIndex[document][1]
+
+    for key,value in d.items():
+        if key == word:
+            result = value / d_new
+
+    return result
 
 def augmentedCountWord(document, word): #given a document and a word, return the following computation: 0.5 +
                                         # (0.5 * number of times that word appears in the document/number of times of the most common word in that
                                         # document).
-    endList = {}
-    count = 0
-    f = open('document_1122.txt','r')
-    doc = f.readlines()
-    for line in doc:
-        if 'google' in line:
-            count += 1
-    f.close()
-    aug = (0.5 + (0.5 * count))
-    print(aug)
-    return endList
+    d = cs.parser.documentIndex[document][1]
+
+    for key,value in d.items():
+        values.append(value)
+
+    sorted_num = sorted(values)
+
+    unique_nums = []
+    for x in sorted_num:
+        if x in sorted_num:
+            if x not in unique_nums:
+                unique_nums.append(x)
+
+    result = 0.5 + (num / unique_nums[-1])
+
+    return result
