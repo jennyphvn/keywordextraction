@@ -6,10 +6,7 @@ builder - contains functions for building the indices
 =====================================================================
 Main Features
 -------------
-  - aaa
-  - bbbb
-  - cccc
-  - etc, etc.
+  --reads dictionary
 """
 
 print('loading celtstats.builder module __init__.py')

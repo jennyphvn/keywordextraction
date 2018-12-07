@@ -6,10 +6,7 @@ stats - contains functions for calculating statistics
 =====================================================================
 Main Features
 -------------
-  - aaa
-  - bbbb
-  - cccc
-  - etc, etc.
+  - contains functions that calculate frequency of words, words in a document, ect.
 """
 
 print('loading celtstats.stats module __init__.py')

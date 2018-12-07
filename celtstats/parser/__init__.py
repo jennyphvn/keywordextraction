@@ -6,10 +6,7 @@ parser - contains functions for parsing text
 =====================================================================
 Main Features
 -------------
-  - aaa
-  - bbbb
-  - cccc
-  - etc, etc.
+  - contains functions that remove stop word
 """
 
 from .text2tokens import *
