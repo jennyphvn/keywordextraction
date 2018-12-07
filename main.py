@@ -22,7 +22,7 @@ def main() :
 #invoke functions to build dictionary here
     cs.builder.builddict_1()
     print(cs.parser.documentIndex)
-    print(cs.freqwordsDoc(document,word))
+    print(cs.stats.freqwordsDoc(document,word))
     print(cs.rankWordsDoc(document,word))
     print(cs.wordBeginLetterDoc(document,letter))
     print(cs.wordEndLetterDoc(document,letter))
