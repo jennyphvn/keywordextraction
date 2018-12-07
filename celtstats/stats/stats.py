@@ -32,26 +32,7 @@ def maxValue(values) :
     return max
 
 def freqWordsDoc(document, word):
-    count = 0
-    f = open('document_1122.txt','r')
-    doc = f.readlines()
-    for line in doc:
-        if 'google' in line:
-            count += 1
-    f.close()
-    f = open('document_3456.txt','r')
-    doc = f.readlines()
-    for line in doc:
-        if 'amazon' in line:
-            count += 1
-    f.close()
-    f = open('document_7788.txt','r')
-    doc = f.readlines()
-    for line in doc:
-        if 'paradise' in line:
-            count += 1
-    f.close()
-    print(count)
+    cs.parser.documentIndex[document][1][word]
 
 #def rankWordsDoc(document, word):
 def rankWordsDoc(document,word):
@@ -139,9 +120,26 @@ def freqdocscount(word):
 
 def freqDocs(word): #given a word, return a list of the documents where that word appears
 
+    d = cs.parser.documentword[document][0]
+
+    for key,value in d.items():
+        if key == word:
+            result = v
+
+        return result
+
 def freqDocsWords(count, k): #given a count, return a list of documents that have that number of words, because the
                              #result can be long, return only k documents (where k is an integer)
+    d = cs.parser.documentword.document[0]
 
+    doc_list = []
+
+    for key,value in d.items():
+        if value[1] == count:
+            for doc in value[0]:
+                if doc not in doc_list:
+
+                    return doc_list[:k]
 
 def freqWordsSizeDoc(document, word): #given a document name, return the result of the number of times that word
                                       #appear in that document divided by the number of unique words in that document.
