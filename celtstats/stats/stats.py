@@ -138,22 +138,10 @@ def freqdocscount(word):
             return docs_list[:k]
 
 def freqDocs(word): #given a word, return a list of the documents where that word appears
-    d = cs.parser.wordIndex.items()
-
-    doc_list = []
-
-    for key,value in d:
-        if value[0] == word:
-            for doc in value[1]
-                if doc not in docs_list:
-                    docs_list += [doc]
-
-                    return docs_list
 
 def freqDocsWords(count, k): #given a count, return a list of documents that have that number of words, because the
                              #result can be long, return only k documents (where k is an integer)
-    d = cs.parser.documentindex.items()
-    d_new = cs.parser.wordindex[document]
+
 
 def freqWordsSizeDoc(document, word): #given a document name, return the result of the number of times that word
                                       #appear in that document divided by the number of unique words in that document.
