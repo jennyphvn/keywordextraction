@@ -22,6 +22,7 @@ def main() :
 #invoke functions to build dictionary here
     cs.builder.builddict_1()
     print(cs.parser.documentIndex)
+<<<<<<< HEAD
     print(cs.stats.freqwordsDoc)
     print(cs.stats.rankWordsDoc)
     print(cs.stats.wordBeginLetterDoc)
@@ -32,6 +33,18 @@ def main() :
     print(cs.stats.freqDocsWords)
     print(cs.stats.freqWordsSizeDoc)
     print(cs.stats.augmentedCountWord)
+=======
+    print(cs.stats.freqwordsDoc())
+    print(cs.rankWordsDoc(document,word))
+    print(cs.wordBeginLetterDoc(document,letter))
+    print(cs.wordEndLetterDoc(document,letter))
+    print(cs.WordsSizeDoc(document,letter))
+    print(cs.freqdocscount(word))
+    print(cs.freqdocs(word))
+    print(cs.freqDocsWords(count,k))
+    print(cs.freqWordsSizeDoc(document,word))
+    print(cs.augmentedCountWord(document,word))
+>>>>>>> 9b82cb833df18e47eff29646cac2203d1c05747f
     #insert exit(1) to run only the code above it
     #exit(1)
     # invoking the function text2tokens defined in the module celtstats.parser
