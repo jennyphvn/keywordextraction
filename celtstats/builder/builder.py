@@ -42,3 +42,23 @@ def builddic_2(stream, dict = 'wordIndex'):
                     cs.parser.wordindex[token] = (val_1, val_2)
                 else:
                     cs.parser.wordindex[token] = (1, [docname])
+                
+def builddic_3(stream, dict = 'indexAugmentedCount'):
+    fs = os.listdir('./texts/output')
+
+    for file in fs :
+        print('input file is: ' + file)
+        docname = file[:file.find('.')]
+
+        with open('./texts/output/' + file, encoding='ISO-8859-1') as f:
+            token_words = cs.parser.text2tokens(f)
+            for token in token_words:
+                if token in cs.parser.wordindex:
+                    val_1 = cs.parser.wordindex[token][0]
+                    val_2 = cs.parser.wordindex[token][1]
+                    if docname not in val_2:
+                        val_2 += [docname]
+                        val_1 += 1
+                    cs.parser.wordindex[token] = (val_1, val_2)
+                else:
+                    cs.parser.wordindex[token] = (1, [docname])
